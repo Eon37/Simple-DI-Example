@@ -19,7 +19,6 @@ public class InjectByAnnotationObjectConfigurator implements ObjectConfigurator 
         for (var field: fields) {
             if(field.isAnnotationPresent(InjectByType.class)) {
                 field.setAccessible(true);
-                //recursion doesn't go inside for loop when there are no fields on field
                 field.set(t, factory.createObject(field.getType()));
             }
         }

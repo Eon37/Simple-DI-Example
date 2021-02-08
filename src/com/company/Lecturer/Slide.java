@@ -1,8 +1,8 @@
 package com.company.Lecturer;
 
 public class Slide {
-    private String text;
-    private String comment;
+    private final String text;
+    private final String comment;
 
     public Slide(String text, String comment) {
         this.text = text;

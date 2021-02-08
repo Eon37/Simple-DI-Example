@@ -35,7 +35,7 @@ public class ObjectFactory {
                     .toString()
                     .replaceFirst(".+(com\\\\company\\\\.*)\\.java", "$1")
                     .replace('\\', '.'))
-                    .getDeclaredConstructor(ObjectFactory.class) //constructor argument
+                    .getDeclaredConstructor(ObjectFactory.class) //constructor argument type
                     .newInstance(this);
         } catch (InstantiationException | NoSuchMethodException e) {
             return null;
