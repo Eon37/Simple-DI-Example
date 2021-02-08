@@ -1,1 +1,1 @@
-# Simple-DI-Example
+# Simple DI Example
